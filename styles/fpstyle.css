@@ -1,0 +1,272 @@
+
+/* ================= 공통 리셋 ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* ================= 레이아웃 구조 ================= */
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 헤더: 로고 좌측, 연락처 우측 배치 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: xx-large;
+    margin: 0;
+}
+
+.emergency-contacts {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.emergency-contacts small {
+    color: #f1c40f;
+}
+
+.main {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.messenger-ui {
+    flex: 5.5;
+    background-color: #b2c7d9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.details-panel {
+    flex: 4.5;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* ================= 메신저 UI 디자인 ================= */
+.chat-header {
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+/* 스캐머 프로필 및 메시지 블록 */
+.scammer-block {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+/* 프로필 사진 설정 */
+.profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    flex-shrink: 0;
+    overflow: hidden;
+    
+    background-image: url('../public/kkoprofic.jpg');
+    background-size: cover;    /* 이미지가 꽉 차게 */
+    background-position: center; /* 이미지의 중앙을 기준으로 */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 스캐머 이름과 메시지들 */
+.scammer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 75%;
+}
+
+.scammer-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+/* 사기범 말풍선 */
+.message.scammer {
+    background-color: white;
+    padding: 10px 14px;
+    border-radius: 0px 15px 15px 15px;
+    margin-bottom: 6px; /* 연달아 보내는 메시지 간격 */
+    font-size: 0.95rem;
+}
+
+.message.scammer:last-child {
+    margin-bottom: 0;
+}
+
+/* 나의 말풍선 (인덱스) */
+.me {
+    align-self: flex-end;
+    background-color: #fae100;
+    padding: 12px 16px;
+    border-radius: 15px 0 15px 15px;
+    transition: all 0.2s ease;
+    margin-bottom: 12px;
+    max-width: 75%;
+}
+
+.me:hover {
+    transform: scale(1.02);
+    filter: brightness(0.95);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.me a {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ================= 상세 설명 패널 디자인 ================= */
+.details-panel h2 {
+    font-size: 1.3rem;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.fraud-detail {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.fraud-detail:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fraud-detail h3 {
+    color: #c0392b;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+/* 체크리스트 */
+.checklist {
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.checklist h4 {
+    margin-bottom: 12px;
+    color: #1e293b;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.checklist li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* ================= 푸터 ================= */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 6px;
+}
+
+.copyright {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
+
+/* ================= 반응형 웹 ================= */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .emergency-contacts {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+    
+    .messenger-ui, .details-panel {
+        width: 100%;
+        flex: none;
+    }
+}

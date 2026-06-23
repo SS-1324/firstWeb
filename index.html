@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금융 사기 조심!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/fpstyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">금융 사기 조심!</h1>
+            <div class="emergency-contacts">
+                <strong>피해 신고:</strong> 경찰청 112 | <strong>상담 및 지급정지:</strong> 금융감독원 1332<br>
+                <small>보이스피싱 서류 진짜인지 알려줘 콜센터 010-3570-8242 </small>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="messenger-ui">
+                <div class="chat-header">의심스러운 메시지들</div>
+                
+                <div class="chat-container">
+                    <div class="scammer-block">
+                        <div class="profile-pic">
+                            </div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">(알 수 없음)</span>
+                            <div class="message scammer">
+                                <p>엄마 나 폰 고장나서 수리 맡겼어. 수리비 나오게 이 번호로 50만 원만 보내줘.</p>
+                            </div>
+                            <div class="message scammer">
+                                <p>(목소리가 똑같은 통화) 아들, 나 지금 교통사고가 났는데 급하게 합의금이 필요해.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type1">내 가족이 급하게 돈이 필요하대요.</a>
+                    </div>
+                    
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">부사장님</span>
+                            <div class="message scammer">
+                                <p>김대리, 나 지금 외부 미팅 중인데 거래처에 급히 결제할 게 생겼어. 은행 앱이 먹통이라 그런데 일단 대신 입금 좀 해줘.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type1">직장 상사가 업무차 대리 결제를 요구해요.</a>
+                    </div>
+                </div>
+
+                <div class="chat-container">
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">02-4242-4242</span>
+                            <div class="message scammer">
+                                <p>[검찰청] 귀하의 명의가 대포통장 개설 및 마약 범죄에 연루되었습니다.</p>
+                            </div>
+                            <div class="message scammer">
+                                <p>현재 수사 중인 사안이니 주변에 절대 알리지 말고 조용한 곳에서 전화받으세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type2">제 명의가 범죄에 도용당했대요. 주변에 알리지 말래요.</a>
+                    </div>
+                    
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">02-4242-4242</span>
+                            <div class="message scammer">
+                                <p>안전한 조사를 위해 보내드린 링크를 눌러 보안 앱을 설치해 주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type2">특정 보안 어플을 깔라고 해요.</a>
+                    </div>
+                </div>
+
+                <div class="chat-container">
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">006************</span>
+                            <div class="message scammer">
+                                <p>[해외배송] 899,000원이 결제되었습니다. 주문정보 조회 url...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type3">전 주문한 적 없는 고액 결제 문자가 왔어요.</a>
+                    </div>
+                    
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">경찰청</span>
+                            <div class="message scammer">
+                                <p>[경찰청] 도로교통법 위반 범칙금 미납 상세 조회 url...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type3">저도 모르는 새애 범칙금이 불어났나봐요.</a>
+                    </div>
+                    
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">(알 수 없음)</span>
+                            <div class="message scammer">
+                                <p>500,000만원이 입금되었습니다.</p>
+                            </div>
+                            <div class="message scammer">
+                                <p>300만원에 합의해줄테니까 돈 보내요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type4">갑자기 모르는 돈이 입금되고 계좌 거래가 모두 막혔어요. 해결하려면 합의금을 주어야 할까요?</a>
+                    </div>
+                </div>
+
+                <div class="chat-container">
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">소액대출 OOO</span>
+                            <div class="message scammer">
+                                <p>급전 필요하신가요? 비대면으로 10만원 당일 소액 대출해 드립니다. (지각비, 수고비 별도)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type5">급히 돈이 필요해요. 소액대출? 지각비? 괜찮을까요?</a>
+                    </div>
+                    
+                    <div class="scammer-block">
+                        <div class="profile-pic"></div>
+                        <div class="scammer-info">
+                            <span class="scammer-name">알바구함</span>
+                            <div class="message scammer">
+                                <p>고수익 아르바이트. 장소 이동하며 OO만 수거해서 전달하시면 됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message me">
+                        <a href="#type5">고수익 알바 하고 싶어요. 뭔가 수거하면 되는 간단한 일이래요.</a>
+                    </div>
+                </div>
+
+                <div class="chat-header">사기입니다. 조심하세요!</div>
+            </section>
+
+            <aside class="details-panel">
+                <h2>사기 유형별 상세 설명 및 대처법</h2>
+
+                <article id="type1" class="fraud-detail">
+                    <h3>1. 지인 및 가족 사칭</h3>
+                    <p><strong>수법:</strong> 자녀, 지인, 직장 상사를 사칭해 폰 고장을 핑계로 금전을 요구하거나 대리 결제를 유도합니다. 최근에는 딥페이크 및 딥보이스 기술을 악용하여 가족의 목소리나 얼굴을 똑같이 모방하는 사례가 늘고 있습니다.</p>
+                    <div class="checklist">
+                        <h4>대처법</h4>
+                        <ul>
+                            <li>음성이나 영상 통화라도 딥페이크 가능성을 의심해야 합니다. 급한 상황처럼 느껴져도 일단 침착하세요.</li>
+                            <li>고향, 출신학교 등 본인들만 아는 확인 질문을 해보세요.</li>
+                            <li>메신저로 돈을 요구할 경우, 반드시 본인과 직접 전화 통화하여 사실 여부를 확인하세요.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="type2" class="fraud-detail">
+                    <h3>2. 공공 및 금융기관 사칭</h3>
+                    <p><strong>수법:</strong> 검찰, 경찰, 금감원을 사칭하여 명의 도용이나 마약 범죄 연루를 명분으로 공포심을 자극합니다. 외부와 연락을 차단한 채 자신들의 지시에만 따르게 유도하며, 현금 인출이나 원격제어용 가짜 보안 앱 설치를 요구합니다.</p>
+                    <div class="checklist">
+                        <h4>대처법</h4>
+                        <ul>
+                            <li>수사기관은 절대 전화나 문자로 자금 이체나 현금 인출을 요구하지 않습니다.</li>
+                            <li>수사 중이라며 타인에게 알리지 말라고 요구하는 것은 100% 사기입니다.</li>
+                            <li>출처를 알 수 없는 앱 설치(URL 클릭)는 기기를 통제당할 수 있으므로 절대 금지해야 합니다.</li>
+                            <li><strong>이미 어플을 설치하는 등 어느정도 지시에 따른 이후라면 </strong>수사 기관에의 확인 전화 등은 다른 사람의 휴대폰을 빌려 진행하세요.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="type3" class="fraud-detail">
+                    <h3>3. 스미싱</h3>
+                    <p><strong>수법:</strong> 해외 고액 결제, 택배 주소지 오류, 범칙금 미납 문자, 경조사 알림 등를 보내 링크(URL) 클릭을 유도하여 개인정보를 탈취합니다.</p>
+                    <div class="checklist">
+                        <h4> 대처법</h4>
+                        <ul>
+                            <li>문자에 적힌 번호로 연락하지 말고, 해당 기관의 공식 앱이나 홈페이지에서 직접 확인하세요.</li>
+                            <li>의심스러운 문자 내 인터넷 주소(URL 링크)는 절대 클릭하지 마세요.</li>
+                            <li>공신력있는 백신 어플을 설치하고, 주기적으로 업데이트하면 예방에 도움이 됩니다.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="type4" class="fraud-detail">
+                    <h3>4.통장 묶기 악용</h3>
+                    <p><strong>수법:</strong>계좌지급정지 제도를 악용해 피해자의 계좌에 돈을 입금한 후, 돈을 돌려다라거나 합의금을 요구하는 방식으로 협박하는 수법입니다.</p>
+                    <div class="checklist">
+                        <h4>대처법</h4>
+                        <ul>
+                            <li>모르는 돈이 입금되었다면 직접 돌려주거나 사용하지 말고, 즉시 은행에 오인 송금으로 신고해야 합니다.</li>
+                            <li>이미 통장이 묶였다면 일단 금융사에 이의신청을 하고, 사업자명세서, 급여명세서, 통장 입출금 내역 등 필요한 자료를 준비합니다.</li>
+                            <li>협박 문자, 텔레그램, 전화가 올 경우 캡쳐나 통화 녹음을 통하여 기록해둡니다.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="type5" class="fraud-detail">
+                    <h3>5. 불법 대출 혹은 범죄 가담 유도</h3>
+                    <p><strong>수법:</strong> 소액 대출 후 '수고비', '지각비' 명목으로 연 1000% 이상의 살인적인 고금리를 요구합니다. 혹은, 구직자에게 고수익 알바를 빙자하여 보이스피싱 수거책이나 인출책으로 가담하게 만듭니다.</p>
+                    <div class="checklist">
+                        <h4>대처법</h4>
+                        <ul>
+                            <li>'수고비', '지각비'도 모두 이자입니다. 법정 최고금리를 초과하는 요구는 불법입니다.</li>
+                            <li>하는 일에 비해 지나치게 높은 수익을 보장하며 현금 전달만을 요구하는 알바는 범죄일 확률이 매우 높습니다.</li>
+                            <li>정보가 명확하지 않은 사람 혹은 업체와의 거래, 계약은 가급적 하지 않는 것이 좋습니다.</li>
+                            <li>불법인 줄 모르고 가담했더라도 금융 사기 범죄의 공범으로 처벌받을 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="fraud-detail">
+                    <p><strong>내 일상을 지키는 방법을 더 알고 싶다면?</strong></p>
+                    <a href="https://www.nis.go.kr/CM/1_2_5/list.do?currentPage=1"><i>국가정보원 카드뉴스 보러가기→</i></a>
+                </article>
+
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <p><strong>핵심 예방 요령:</strong> 의심하고, 확인하고, 피해 발생 시 당황하지 말고 즉시 신고하세요!</p>
+            <p class="copyright">Copyright 2026 shinsuyeon. All Right Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
