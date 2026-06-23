@@ -1,5 +1,4 @@
-
-/* ================= 공통 리셋 ================= */
+/*   공통 리셋   */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +6,12 @@
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 앵커 쓸 때 부드럽게 움직이도록 하기 */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
     background-color: #f4f5f9;
     color: #333;
     line-height: 1.6;
@@ -27,7 +26,7 @@ ul {
     list-style-position: inside;
 }
 
-/* ================= 레이아웃 구조 ================= */
+/* 레이아웃 구조 */
 .wrapper {
     width: 100%;
     max-width: 1200px;
@@ -35,7 +34,7 @@ ul {
     padding: 20px;
 }
 
-/* 헤더: 로고 좌측, 연락처 우측 배치 */
+/* 헤더- 로고 좌측, 연락처 우측 배치 */
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,16 +46,19 @@ ul {
     margin-bottom: 20px;
 }
 
+/* 로고 설정 */
 .logo {
     font-size: xx-large;
     margin: 0;
 }
 
+/* 긴급 전화 설정 */
 .emergency-contacts {
     text-align: right;
     font-size: 1rem;
 }
 
+/* 노란색으로 표시할 긴급 전화번호 설정 */
 .emergency-contacts small {
     color: #f1c40f;
 }
@@ -67,6 +69,7 @@ ul {
     align-items: flex-start;
 }
 
+/* 우측 카카오톡 UI 기본 설정*/
 .messenger-ui {
     flex: 5.5;
     background-color: #b2c7d9;
@@ -74,6 +77,7 @@ ul {
     border-radius: 8px;
 }
 
+/* 좌측 대응방법 안내 패널 기본 설정 */
 .details-panel {
     flex: 4.5;
     background-color: white;
@@ -82,7 +86,7 @@ ul {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* ================= 메신저 UI 디자인 ================= */
+/* 메신저 UI 디자인 */
 .chat-header {
     text-align: center;
     background-color: rgba(0,0,0,0.1);
@@ -101,7 +105,7 @@ ul {
     margin-bottom: 35px;
 }
 
-/* 스캐머 프로필 및 메시지 블록 */
+/* 프로필 및 메시지 블록 */
 .scammer-block {
     display: flex;
     align-items: flex-start;
@@ -113,13 +117,13 @@ ul {
 .profile-pic {
     width: 42px;
     height: 42px;
-    border-radius: 50%;
+    border-radius: 50%; /* 동그랗게 */
     background-color: #cbd5e1;
     flex-shrink: 0;
     overflow: hidden;
     
     background-image: url('../public/kkoprofic.jpg');
-    background-size: cover;    /* 이미지가 꽉 차게 */
+    background-size: cover; /* 이미지가 꽉 차게 */
     background-position: center; /* 이미지의 중앙을 기준으로 */
 }
 
@@ -137,6 +141,7 @@ ul {
     max-width: 75%;
 }
 
+/* 사기범 이름 */
 .scammer-name {
     font-size: 0.85rem;
     font-weight: 700;
@@ -150,7 +155,7 @@ ul {
     background-color: white;
     padding: 10px 14px;
     border-radius: 0px 15px 15px 15px;
-    margin-bottom: 6px; /* 연달아 보내는 메시지 간격 */
+    margin-bottom: 6px; /* 연달아 보내는 메시지 간격 좀 가깝게 */
     font-size: 0.95rem;
 }
 
@@ -158,7 +163,7 @@ ul {
     margin-bottom: 0;
 }
 
-/* 나의 말풍선 (인덱스) */
+/* 나의 말풍선 */
 .me {
     align-self: flex-end;
     background-color: #fae100;
@@ -169,6 +174,7 @@ ul {
     max-width: 75%;
 }
 
+/* 내 말풍선에 커서를 올렸을 때 반응 */
 .me:hover {
     transform: scale(1.02);
     filter: brightness(0.95);
@@ -176,13 +182,14 @@ ul {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* 메세지 내부 링크(앵커) 스타일 */
 .me a {
     display: block;
     font-weight: bold;
     color: #333;
 }
 
-/* ================= 상세 설명 패널 디자인 ================= */
+/* 상세 설명 패널 디자인 */
 .details-panel h2 {
     font-size: 1.3rem;
     border-bottom: 2px solid #2c3e50;
@@ -190,25 +197,28 @@ ul {
     margin-bottom: 20px;
 }
 
+/* 상세 설명 박스 스타일 */
 .fraud-detail {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1px dashed #ccc;
 }
 
+/* 마지막 항목은 구분선을 제거 */
 .fraud-detail:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+/* 제목 스타일 */
 .fraud-detail h3 {
     color: #c0392b;
     margin-bottom: 10px;
     font-size: 1.15rem;
 }
 
-/* 체크리스트 */
+/* 대응법 체크리스트 박스 */
 .checklist {
     background-color: #ffffff;
     padding: 16px 20px;
@@ -218,6 +228,7 @@ ul {
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
+/* 체크리스트 제목 스타일 */
 .checklist h4 {
     margin-bottom: 12px;
     color: #1e293b;
@@ -227,13 +238,14 @@ ul {
     align-items: center;
 }
 
+/* 체크리스트 글자 스타일 */
 .checklist li {
     margin-bottom: 8px;
     font-size: 0.95rem;
     color: #334155;
 }
 
-/* ================= 푸터 ================= */
+/* 푸터 */
 .footer {
     text-align: center;
     margin-top: 30px;
@@ -243,13 +255,14 @@ ul {
     border-radius: 6px;
 }
 
+/* 최하단에 작게 표시할 카피라이트 */
 .copyright {
     margin-top: 8px;
-    font-size: 0.8rem;
+    font-size: x-small;
     color: #bdc3c7;
 }
 
-/* ================= 반응형 웹 ================= */
+/* 반응형 웹 */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
